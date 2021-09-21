@@ -1,0 +1,10 @@
+trigger: none
+
+pool:
+  vmImage: 'windows-latest'
+
+steps:
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'test'
+    projects: 'DevConClicker\DevConClicker.Tests\DevConClicker.Tests.csproj'
