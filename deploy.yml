@@ -6,14 +6,16 @@ pool:
 
 steps:
 - task: DotNetCoreCLI@2
+  displayName: 'Build'
   inputs:
-    command: publish
-    publishWebProjects: True
-    arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)'
-    zipAfterPublish: True
+    command: 'publish'
+    publishWebProjects: false
+    projects: 'DevConClicker/DevConClicker/DevConClicker.csproj'
+    arguments: '-c Release -o $(Build.ArtifactStagingDirectory)/devconclicker/'
+    zipAfterPublish: true
 
 - task: AzureWebApp@1
-  displayName: 'Publish'
+  displayName: 'Deploy'
   inputs:
     azureSubscription: 'Pay-As-You-Go(1)(f6a87188-5eec-4f5e-b859-e826e0106dbd)'
     appType: 'webApp'
