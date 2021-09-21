@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DevCon\DevConClicker.csproj" />
+    <ProjectReference Include="..\DevCon\DevCon.csproj" />
   </ItemGroup>
 
 </Project>

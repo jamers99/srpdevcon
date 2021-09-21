@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31710.8
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevConClicker", "DevCon\DevConClicker.csproj", "{88FF9689-9143-4A65-A040-365E3A759DA3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevCon", "DevCon\DevCon.csproj", "{88FF9689-9143-4A65-A040-365E3A759DA3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevConClicker.Tests", "DevCon.Tests\DevConClicker.Tests.csproj", "{4BD82EBD-A42A-4E41-AEBC-1E3D908D9AA2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevCon.Tests", "DevCon.Tests\DevCon.Tests.csproj", "{4BD82EBD-A42A-4E41-AEBC-1E3D908D9AA2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

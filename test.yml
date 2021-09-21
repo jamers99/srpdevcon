@@ -7,4 +7,4 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'test'
-    projects: 'DevConClicker\DevConClicker.Tests\DevConClicker.Tests.csproj'
+    projects: 'DevCon\DevCon.Tests\DevCon.Tests.csproj'
