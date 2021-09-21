@@ -8,6 +8,6 @@ namespace DevConClicker.Pages
     public class IndexModel : PageModel
     {
         public static Tracker Tracker { get; } = new Tracker();
-        public void OnGet() => Tracker.Track(HttpContext.Connection.RemoteIpAddress.ToString());
+        public void OnGet() => Tracker.Track();
     }
 }

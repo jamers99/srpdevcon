@@ -11,10 +11,9 @@ namespace DevConClicker.Tests
             var tracker = new Tracker();
             Assert.Equal(0, tracker.TotalVisits);
 
-            tracker.Track("test");
-            tracker.Track("test");
-            tracker.Track("test2");
-            Assert.Equal(2, tracker.UniqueVisits);
+            tracker.Track();
+            tracker.Track();
+            tracker.Track();
             Assert.Equal(3, tracker.TotalVisits);
         }
     }

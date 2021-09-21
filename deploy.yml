@@ -11,7 +11,7 @@ steps:
     command: 'publish'
     publishWebProjects: false
     projects: 'DevCon/DevCon/DevCon.csproj'
-    arguments: '-c Release -o $(Build.ArtifactStagingDirectory)/devconclicker/'
+    arguments: '-c Release -o $(Build.ArtifactStagingDirectory)/devcon/'
     zipAfterPublish: true
 
 - task: AzureWebApp@1
@@ -19,6 +19,6 @@ steps:
   inputs:
     azureSubscription: 'Pay-As-You-Go(1)(f6a87188-5eec-4f5e-b859-e826e0106dbd)'
     appType: 'webApp'
-    appName: 'silkdevcon'
+    appName: 'srpdevcon'
     package: '$(Build.ArtifactStagingDirectory)/**/*.zip'
     deploymentMethod: 'auto'
