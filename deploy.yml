@@ -10,7 +10,7 @@ steps:
   inputs:
     command: 'publish'
     publishWebProjects: false
-    projects: 'DevConClicker/DevConClicker/DevConClicker.csproj'
+    projects: 'DevCon/DevCon/DevCon.csproj'
     arguments: '-c Release -o $(Build.ArtifactStagingDirectory)/devconclicker/'
     zipAfterPublish: true
 
