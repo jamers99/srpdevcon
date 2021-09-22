@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Timers;
 
 namespace DevConClicker
 {
@@ -54,22 +55,13 @@ namespace DevConClicker
                 endpoints.MapRazorPages();
             });
 
-            if (File.Exists("ipvisits.txt"))
-            {
-                var ips = File.ReadAllLines("ipvisits.txt");
-                foreach (var ip in ips)
-                    IndexModel.Tracker.IPVisits.Add(ip);
-            }
-            if (File.Exists("totalvisits.txt"))
-                IndexModel.Tracker.TotalVisits = int.Parse(File.ReadAllText("totalvisits.txt"));
-
+            IndexModel.Tracker.Load();
             applicationLifetime.ApplicationStopping.Register(OnShutdown);
         }
 
         void OnShutdown()
         {
-            File.WriteAllLines("ipvisits.txt", IndexModel.Tracker.IPVisits);
-            File.WriteAllText("totalvisits.txt", IndexModel.Tracker.TotalVisits.ToString());
+            IndexModel.Tracker.Save();
         }
     }
 }
