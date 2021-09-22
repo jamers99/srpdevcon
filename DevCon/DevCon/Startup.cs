@@ -54,12 +54,12 @@ namespace DevConClicker
                 endpoints.MapRazorPages();
             });
 
-            if (File.Exists("ipvisits.txt"))
-            {
-                var ips = File.ReadAllLines("ipvisits.txt");
-                foreach (var ip in ips)
-                    IndexModel.Tracker.IPVisits.Add(ip);
-            }
+            //if (File.Exists("ipvisits.txt"))
+            //{
+            //    var ips = File.ReadAllLines("ipvisits.txt");
+            //    foreach (var ip in ips)
+            //        IndexModel.Tracker.IPVisits.Add(ip);
+            //}
             if (File.Exists("totalvisits.txt"))
                 IndexModel.Tracker.TotalVisits = int.Parse(File.ReadAllText("totalvisits.txt"));
 
@@ -68,7 +68,7 @@ namespace DevConClicker
 
         void OnShutdown()
         {
-            File.WriteAllLines("ipvisits.txt", IndexModel.Tracker.IPVisits);
+            //File.WriteAllLines("ipvisits.txt", IndexModel.Tracker.IPVisits);
             File.WriteAllText("totalvisits.txt", IndexModel.Tracker.TotalVisits.ToString());
         }
     }

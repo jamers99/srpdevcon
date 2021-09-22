@@ -6,15 +6,10 @@ namespace DevCon
     public class Tracker
     {
         public int TotalVisits { get; set; }
-        public int UniqueVisits => IPVisits.Count;
 
-        public ConcurrentBag<string> IPVisits { get; } = new ConcurrentBag<string>();
-
-        public void Track(string ip)
+        public void Track()
         {
             TotalVisits++;
-            if (!IPVisits.Contains(ip))
-                IPVisits.Add(ip);
         }
     }
 }
