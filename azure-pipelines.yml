@@ -7,6 +7,9 @@ pool:
 steps:
 - task: AzureContainerApps@0
   inputs:
+    appSourcePath: 'DevCon2023'
     azureSubscription: 'Azure DevTest subscription 1(81fbcae9-7964-4d10-8c0f-979d8e3a0d7a)'
     acrName: 'DevCon2023'
+    dockerfilePath: 'DevCon2023/Dockerfile'
     containerAppName: 'DevCon2023'
+    resourceGroup: 'DevCon2023'
