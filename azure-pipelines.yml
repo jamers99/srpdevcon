@@ -1,0 +1,12 @@
+trigger:
+- main
+
+pool:
+  vmImage: 'linux-latest'
+
+steps:
+- task: AzureContainerApps@0
+  inputs:
+    azureSubscription: 'Azure DevTest subscription 1(81fbcae9-7964-4d10-8c0f-979d8e3a0d7a)'
+    acrName: 'DevCon2023'
+    containerAppName: 'DevCon2023'
