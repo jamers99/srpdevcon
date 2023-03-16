@@ -1,7 +1,0 @@
-C:\Repos\jamers99\DevCon\DevCon2023\obj\Docker\publish\DevCon2023.exe
-C:\Repos\jamers99\DevCon\DevCon2023\obj\Docker\publish\appsettings.Development.json
-C:\Repos\jamers99\DevCon\DevCon2023\obj\Docker\publish\appsettings.json
-C:\Repos\jamers99\DevCon\DevCon2023\obj\Docker\publish\DevCon2023.dll
-C:\Repos\jamers99\DevCon\DevCon2023\obj\Docker\publish\DevCon2023.deps.json
-C:\Repos\jamers99\DevCon\DevCon2023\obj\Docker\publish\DevCon2023.runtimeconfig.json
-C:\Repos\jamers99\DevCon\DevCon2023\obj\Docker\publish\DevCon2023.pdb
