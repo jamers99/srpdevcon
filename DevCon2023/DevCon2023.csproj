@@ -7,9 +7,11 @@
     <UserSecretsId>15862619-030b-4626-8600-aa55bd229495</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <DockerfileContext>.</DockerfileContext>
+    <ApplicationInsightsResourceId>/subscriptions/81fbcae9-7964-4d10-8c0f-979d8e3a0d7a/resourceGroups/DevCon2023/providers/microsoft.insights/components/DevCon2023</ApplicationInsightsResourceId>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.15.0" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.2" />
   </ItemGroup>
 
