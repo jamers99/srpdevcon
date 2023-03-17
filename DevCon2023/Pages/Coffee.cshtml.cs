@@ -7,6 +7,7 @@ namespace DevCon2023.Pages
     {
         public void OnGet()
         {
+            throw new NotImplementedException();
         }
     }
 }
