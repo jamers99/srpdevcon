@@ -11,5 +11,6 @@ steps:
     azureSubscription: 'Azure DevTest subscription 1(81fbcae9-7964-4d10-8c0f-979d8e3a0d7a)'
     acrName: 'devcon2023'
     dockerfilePath: 'Dockerfile'
+    imageToBuild: 'devcon2023.azurecr.io/devcon2023:latest'
     containerAppName: 'devcon2023'
     resourceGroup: 'DevCon2023'
